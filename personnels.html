@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Personnel | Clinique Lamp Fall</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo.jpg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Red+Rose:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+        <style>
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 99;
+            background-color: #25D366;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 30px;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+        
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+        }
+        
+        .whatsapp-btn i {
+            margin-top: 3px;
+        }
+    </style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid py-2 d-none d-lg-flex">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <small class="me-3"><i class="fa fa-map-marker-alt me-2"></i> Lot 224/C Kasnack, Kaolack</small>
+                    <small class="me-3"><i class="fa fa-clock me-2"></i>Tous les jours</small>
+                </div>
+                <!-- <nav class="breadcrumb mb-0">
+                    <a class="breadcrumb-item small text-body" href="#">Career</a>
+                    <a class="breadcrumb-item small text-body" href="#">Support</a>
+                    <a class="breadcrumb-item small text-body" href="#">Terms</a>
+                    <a class="breadcrumb-item small text-body" href="#">FAQs</a>
+                </nav> -->
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Brand Start -->
+    <div class="container-fluid bg-primary text-white pt-4 pb-5 d-none d-lg-flex">
+        <div class="container pb-2">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex">
+                    <i class="bi bi-telephone-inbound fs-2"></i>
+                    <div class="ms-3">
+                        <h5 class="text-white mb-0">Appellez-nous au</h5>
+                        <span> 33 941 83 83</span>
+                    </div>
+                </div>
+                <a href="index.html" class="h1 text-white mb-0">Lamp <span class="text-dark"> Fall</span></a>
+                <div class="d-flex">
+                    <i class="bi bi-envelope fs-2"></i>
+                    <div class="ms-3">
+                        <h5 class="text-white mb-0">Envoyez Nous un Mail au:</h5>
+                        <span>contact@cliniquelampfall.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Brand End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0 px-lg-3">
+                <a href="index.html" class="navbar-brand d-lg-none">
+                    <h1 class="text m-0" style="color: #007baf;"><span class="text" style="color: #ffffff;">Lamp Fall</span></h1>
+                </a>
+                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon" style="color: #ffffff;"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="index.html" class="nav-item nav-link active">Accueil</a>
+                        <a href="about.html" class="nav-item nav-link">A propos</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="team.html" class="nav-item nav-link">Médecins</a>
+                        <a href="personnels.html" class="nav-item nav-link">Personnels</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="ms-auto d-none d-lg-flex">
+                        <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-sm-square btn-primary ms-2" href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5 mt-4">
+            <h1 class="display-2 text-white mb-3 animated slideInDown">Personnels</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+                    <li class="breadcrumb-item" aria-current="page">Nos personnels</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    
+    <!-- Team Start -->
+    <div class="container-fluid container-team py-5">
+        <div class="container pb-5">
+            <!-- <div class="row g-5 align-items-center mb-5">
+                <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
+                    <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
+                </div>
+                <div class="col-md-6 wow fadeIn" data-wow-delay="0.5s">
+                    <h1 class="display-6 mb-3" style="color: #000000;">Dr Thiam</h1>
+                    <p class="mb-1">Directeur Général – Clinique Lamp Fall</p>
+                    <p class="mb-5">Kasnack, Kaolack, SENEGAL</p>
+                    <h3 class="mb-3" style="color: #000000;">Mot du Directeur</h3>
+                    <p class="mb-4">Chers patients, chers collaborateurs,
+
+                                                Je vous souhaite la bienvenue dans notre établissement de santé. Notre équipe de professionnels de la santé est entièrement dédiée à votre bien-être et à votre santé. Nous sommes
+
+                                                Notre établissement avec tout en
+
+                                                Des équipements médicaux de pointe
+                                                Une équipe médicale
+                                                Des services spéciaux
+                                                Un suivi personnel
+                                                Une prise en charge globale
+                                                Notre équipe est composée
+
+                                                Vous offrez les meilleurs
+                                                Répondre à vos questions
+                                                Vous
+                                                Respecter vos droits
+                                                Maintenir la confidentialité de
+                                                Nous sommes particulièrement attachés à :
+
+                                                La qualité des soins
+                                                La sécurité de
+                                                L'auberge
+                                                La formation continue de nos équipes
+                                                L'amélioration continue de nos
+                                                N'hésitez pas à nous faire part de vos questions, de vos préoccupations ou de vos suggestions. Nous sommes là pour vous écouter et vous accompagner dans votre parcours de soins. Votre satisfaction est notre priorité.<br>
+
+                                                <strong>Dr Thiam</strong>
+                    </p>
+                    <p class="mb-4"></p>
+                    <div class="d-flex">
+                        <a class="btn btn-lg-square btn-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2" href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div> -->
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/Agent Issakha Fedior.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-facebook-f" style="color: #007baf;"></i></a>
+                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-twitter" style="color: #007baf;"></i></a>
+                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-linkedin-in" style="color: #007baf;"></i></a>
+                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-youtube" style="color: #007baf;"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-1"> Issakha Fedior</h5>
+                            <span>Agent Administratif</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/Agent Fatoumata Sylla.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-facebook-f" style="color: #007baf;"></i></a>
+                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-twitter" style="color: #007baf;"></i></a>
+                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-linkedin-in" style="color: #007baf;"></i></a>
+                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-youtube" style="color: #007baf;"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-1">Fatoumata Sylla</h5>
+                            <span>Receptionniste</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/Agent Daouda Sarr.jpg" alt="">
+                            <div class="team-social">
+                               <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-facebook-f" style="color: #007baf;"></i></a>
+                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-twitter" style="color: #007baf;"></i></a>
+                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-linkedin-in" style="color: #007baf;"></i></a>
+                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-youtube" style="color: #007baf;"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-1">Daouda Sarr</h5>
+                            <span>Agent Administratif</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/Agent Serigne Moustapha Diop.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-facebook-f" style="color: #007baf;"></i></a>
+                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-twitter" style="color: #007baf;"></i></a>
+                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-linkedin-in" style="color: #007baf;"></i></a>
+                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-youtube" style="color: #007baf;"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-1">Serigne Moustapha Diop</h5>
+                            <span>Agent Comptable</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/Agent Ameth Gueye.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-facebook-f" style="color: #007baf;"></i></a>
+                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-twitter" style="color: #007baf;"></i></a>
+                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-linkedin-in" style="color: #007baf;"></i></a>
+                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-youtube" style="color: #007baf;"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-1">Ameth Gueye</h5>
+                            <span>Agent de sécurité</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/Agent Rouguiyatou Diallo.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-facebook-f" style="color: #007baf;"></i></a>
+                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-twitter" style="color: #007baf;"></i></a>
+                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-linkedin-in" style="color: #007baf;"></i></a>
+                                <a class="btn btn-square btn-light mx-1" href=""><i class="fab fa-youtube" style="color: #007baf;"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-1">Rouguiyatou Diallo</h5>
+                            <span>Caissière</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+      <a href="https://wa.me/+221775447281" class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+
+ <!-- Footer Start -->
+    <div class="container-fluid footer position-relative  text-white-50 py-5 wow fadeIn" data-wow-delay="0.1s" style="background-color: #000;">
+        <div class="container">
+            <div class="row g-5 py-5">
+                <div class="col-lg-6 pe-lg-5">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="h1  mb-0" style="color:#ff1229;" >Clinique <span class="text-white">Lamp Fall</span></h1>
+                    </a>
+                    <p class="fs-5 mb-4" style="color: white;">À la Clinique Lamp Fall, nous plaçons l’humain au centre de notre mission.
+                        Située au cœur de la communauté, notre clinique offre des soins de santé modernes, accessibles et de haute qualité pour tous.</p>
+                    <p style="color: #ffffff;"><i class="fa fa-map-marker-alt me-2" style="color: #ffffff;"></i>Kasnack, Kaolack, SENEGAL</p>
+                    <p style="color: #ffffff;"><i class="fa fa-phone-alt me-2" style="color: #ffffff;"></i>33 941 83 83</p>
+                    <p style="color: #ffffff;"><i class="fa fa-envelope me-2" style="color: #ffffff;"></i>contact@cliniquelampfall.com</p>
+                    <div class="d-flex mt-4">
+                        <a class="btn btn-lg-square btn-primary me-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg-square btn-primary me-2" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <div class="row g-5">
+                         <div class="col-sm-6">
+                            <h4 class="text-light mb-4">Liens Rapides</h4>
+                            <a class="btn btn-link" href="about.html">A propos</a>
+                            <a class="btn btn-link" href="contact.html">Contact</a>
+                            <a class="btn btn-link" href="service.html">Services</a>
+                        </div> 
+                        
+                        <div class="col-sm-12">
+                            <h4 class="text-light mb-4">Newsletter</h4>
+                            <div class="w-100">
+                                <div class="input-group">
+                                    <input type="text" class="form-control border-0 py-3 px-4" style="background: rgba(255, 255, 255, .1);" placeholder="Votre Adresse mail "><button class="btn btn-primary px-4">S'inscrire</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-dark text-white-50 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; <a href="#">www.cliniquelampfall.com</a>. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Développé par <a href="">Abdallah</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
